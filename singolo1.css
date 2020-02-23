@@ -74,6 +74,12 @@ h1::after {
     position: relative;
 }
 
+.nav-list li:hover {
+    text-decoration: underline;
+
+}
+
+
 .nav-active {
     color: #f06c64;
 }
