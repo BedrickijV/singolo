@@ -1,4 +1,98 @@
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Regular.ttf");
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+
+.content-container {
+    width: 1020px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: "Lato";
+    font-size: 25px;
+    color: white;
+    letter-spacing: -0.5px;
+}
+.logo {
+    padding-left: 40px ;
+    flex-basis: 608px;
+
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2d303a;
+    padding: 29px 0 30px 0;
+    border-bottom: 6px #323746 solid;
+
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+a {
+    font-family: "Lato";
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+h1::after {
+    content: "*";
+    color: #e36861;
+    width: 5px;
+}
+
+.navigation {
+    padding-top: 10px;
+    flex-basis: 411px;
+}
+.nav-list li {
+    padding-right: 29px;
+    letter-spacing: 0.05px;
+    color: #ffffff;
+    position: relative;
+}
+
+.nav-active {
+    color: #f06c64;
+}
+
+.nav-list li::after {
+    content: ".";
+    color: #494e62;
+    font-size: 25px;
+    position: absolute;
+    top: -60%;
+    left: 75%;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.iPhone-vertical {
+    margin: 53px 0 54px 111px;
+}
+.iPhone-horizontal {
+
 }
