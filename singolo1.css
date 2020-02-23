@@ -4,6 +4,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("assets/fonts/Lato-Bold.ttf");
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -94,5 +100,93 @@ h1::after {
     margin: 53px 0 54px 111px;
 }
 .iPhone-horizontal {
+    margin: 174px 111px 0 0;
+}
+.slider-controls-left {
+    position: absolute;
+    cursor: pointer;
+    top: 281px;
+    left: 42px;
+}
+.slider-controls-right {
+    position: absolute;
+    cursor: pointer;
+    top: 277px;
+    left: 964px;
+    transform: rotate(180deg);
+}
 
+.services {
+    background-color: #f2f2f2;
+    border-bottom: solid 1px #ffffff;
+}
+.services-general-description {
+    padding: 59px 40px 0 40px;
+
+}
+.services-title {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato-Bold";
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+
+.services-title-description {
+    font-size: 18px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    margin-top: 18px;
+    line-height: 30px;
+    word-spacing: 0.1px;
+    letter-spacing: -0.35px;
+    text-align: justify;
+}
+.service-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 47px 40px 30px 40px;
+    justify-content: space-between;
+}
+.service-item {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    margin-right: 17px;
+
+}
+.item-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Bold";
+    font-weight: 900;
+
+}
+
+.item-info {
+    width: 220px;
+    padding-left: 20px;
+    margin-top: -2px;
+    letter-spacing: 0.1px;
+    margin-bottom: 32px;
+}
+
+.item-description {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 9px;
+    margin-right: -23px;
+
+}
+
+.item-image {
+    width: 59px;
+    height: 59px;
 }
