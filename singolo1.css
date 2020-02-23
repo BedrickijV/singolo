@@ -78,7 +78,7 @@ h1::after {
     color: #f06c64;
 }
 
-.nav-list li::after {
+.nav-list li:not(:last-child):after {
     content: ".";
     color: #494e62;
     font-size: 25px;
