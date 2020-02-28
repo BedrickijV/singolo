@@ -2,3 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    width: 100%;
+}
+
+.content-container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.portfolio-container {
+    background-color: #2d303a;;
+}
