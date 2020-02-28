@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("assets/fonts/Lato-Bold.ttf");
+    font-weight: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,5 +25,46 @@ body {
 }
 
 .portfolio-container {
-    background-color: #2d303a;;
+    background-color: #2d303a;
+    padding: 60px 40px;
+}
+
+.portfolio-title {
+    font-size: 30px;
+    color: #666d89;
+    font-family: "Lato-Bold";
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.portfolio-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-top: 18px;
+    letter-spacing: -0.36px;
+}
+
+.portfolio-buttons-container {
+    display: flex;
+    margin-top: 11px;
+}
+
+.portfolio-button {
+    height: 22px;
+    border-radius: 5px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    font-family: "lato";
+    color: #666d89;
+    padding: 0 7px;
+    letter-spacing: -0.4px;
+    margin-right: 5px;
+}
+
+.button-active {
+    border-color: #c5c5c5;
+    color: #c5c5c5;
 }
