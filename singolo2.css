@@ -1,18 +1,25 @@
 @font-face {
     font-family: "Lato";
-    src: url("assets/fonts/Lato-Regular.ttf");
+    src: url("assets/fonts/Lato-Light.ttf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Lato-Bold";
-    src: url("assets/fonts/Lato-Bold.ttf");
+    font-family: "Lato-Heavy";
+    src: url("assets/fonts/Lato-Heavy.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato-Medium";
+    src: url("assets/fonts/Lato-Medium.ttf");
     font-weight: normal;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,13 +33,14 @@ body {
 
 .portfolio-container {
     background-color: #2d303a;
-    padding: 60px 40px;
+    padding: 60px 40px 48px 40px;
+    border-bottom: 6px #323746 solid;
 }
 
 .portfolio-title {
     font-size: 30px;
     color: #666d89;
-    font-family: "Lato-Bold";
+    font-family: "Lato-Heavy";
     font-weight: 900;
     letter-spacing: 0.5px;
 }
@@ -40,7 +48,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato-Medium";
     font-weight: 300;
     text-align: left;
     margin-top: 18px;
@@ -49,7 +57,7 @@ body {
 
 .portfolio-buttons-container {
     display: flex;
-    margin-top: 11px;
+    margin:11px 0 19px 0;
 }
 
 .portfolio-button {
@@ -57,14 +65,155 @@ body {
     border-radius: 5px;
     background-color: #2d303a;
     border: 1px solid #666d89;
-    font-family: "lato";
+    font-family: "Lato-Medium";
     color: #666d89;
     padding: 0 7px;
-    letter-spacing: -0.4px;
-    margin-right: 5px;
+    letter-spacing: -0.22px;
+    margin-right: 10px;
+    font-size: 12px;
 }
 
 .button-active {
     border-color: #c5c5c5;
     color: #c5c5c5;
 }
+
+.portfolio-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 620px;
+    overflow: hidden;
+}
+.portfolio-image-item {
+    padding: 94px 110px 93px 110px;
+    margin-bottom: 20px;
+
+}
+.image-1 {
+    background-image: url("assets/images/portfolio/1.png");
+    background-position: -8px -11px;
+}
+
+.image-2 {
+    background-image: url("assets/images/portfolio/2.png");
+    background-position: -82px -43px;
+}
+
+.image-3 {
+    background-image: url("assets/images/portfolio/3.png");
+    background-position: -11px -1px;
+}
+.image-4 {
+    background-image: url("assets/images/portfolio/4.png");
+    background-position: -24px -2px;
+}
+
+.image-5 {
+    background-image: url("assets/images/portfolio/5.png");
+    background-position: -10px -16px;
+}
+
+.image-6 {
+    background-image: url("assets/images/portfolio/6.png");
+    background-position: -16px -4px;
+}
+
+.image-7 {
+    background-image: url("assets/images/portfolio/7.png");
+    background-position: -31px -39px;
+}
+
+.image-8 {
+    background-image: url("assets/images/portfolio/8.png");
+    background-position: -24px -32px;
+}
+
+.image-9 {
+    background-image: url("assets/images/portfolio/9.png");
+    background-position: -16px -2px;
+}
+
+.image-10 {
+    background-image: url("assets/images/portfolio/10.png");
+    background-position: -141px -113px;
+}
+
+.image-11 {
+    background-image: url("assets/images/portfolio/11.png");
+    background-position: -144px -175px;
+}
+
+.image-12 {
+    background-image: url("assets/images/portfolio/12.png");
+    background-position: -332px -60px;
+}
+
+.about-us-container {
+    padding: 69px 40px 40px 40px;
+    background-color: #f2f2f2;
+}
+
+.about-us-title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Heavy";
+    font-weight: 900;
+}
+
+.about-us-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    margin-top: 27px;
+    text-align: justify;
+    letter-spacing: -0.25px;
+}
+.about-us-items-container {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    padding-top: 45px;
+}
+.about-us-item {
+
+}
+.first-item-photo {
+    padding: 150px;
+    background-image: url("assets/images/AboutUs/Adam.png");
+}
+
+.second-item-photo {
+    padding: 150px;
+    background-image: url("assets/images/AboutUs/Desmond.png");
+}
+
+.third-item-photo {
+    padding: 150px;
+    background-image: url("assets/images/AboutUs/Scolara.png");
+}
+.about-us-item-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Heavy";
+    font-weight: 900;
+    padding-top: 17px;
+}
+
+.about-us-item-description {
+    width: 300px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    padding-top: 9px;
+    text-align: justify;
+
+}
+
+
