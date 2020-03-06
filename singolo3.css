@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Light.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Heavy";
+    src: url("assets/fonts/Lato-Heavy.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato-Medium";
+    src: url("assets/fonts/Lato-Medium.ttf");
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.content-container {
+    width: 1020px;
+    margin: 0 auto;
+}
