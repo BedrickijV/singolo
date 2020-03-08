@@ -199,11 +199,11 @@ body {
     display: flex;
 }
 
-.social-media-item:not(:last-child) {
+.footer-social-media-item:not(:last-child) {
     margin-right: 8px;
 }
 
-.social-media-item:hover {
+.footer-social-media-item:hover {
     animation: transform-rotate 2s infinite linear
 }
 
