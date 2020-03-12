@@ -399,13 +399,13 @@ h1::after {
     margin-right: 8px;
 }
 
-.social-media-item:hover {
-    animation: transform-rotate 2s infinite linear
-}
+/*.social-media-item:hover {*/
+/*    animation: transform-rotate 2s infinite linear*/
+/*}*/
 
-@keyframes transform-rotate{
-    100%{transform:rotate(360deg)}
-}
+/*@keyframes transform-rotate{*/
+/*    100%{transform:rotate(360deg)}*/
+/*}*/
 
 .get-a-quote-container {
     background-color: #f06c64;
@@ -579,10 +579,10 @@ h1::after {
     margin-right: 8px;
 }
 
-.footer-social-media-item:hover {
-    animation: transform-rotate 2s infinite linear
-}
+/*.footer-social-media-item:hover {*/
+/*    animation: transform-rotate 2s infinite linear*/
+/*}*/
 
-@keyframes transform-rotate{
-    100%{transform:rotate(360deg)}
-}
+/*@keyframes transform-rotate{*/
+/*    100%{transform:rotate(360deg)}*/
+/*}*/
