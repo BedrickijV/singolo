@@ -105,6 +105,7 @@ h1::after {
     justify-content: space-between;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+    height: 600px;
 }
 
 .iPhone-vertical {
@@ -585,3 +586,7 @@ h1::after {
 /*@keyframes transform-rotate{*/
 /*    100%{transform:rotate(360deg)}*/
 /*}*/
+
+.image-active {
+    border: 5px solid #F06C64;
+}
