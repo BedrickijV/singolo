@@ -106,7 +106,7 @@ function changeSlide (direction) {
     if(!isEnabled) return;
     isEnabled = false;
 
-    let activeSlide = document.querySelector('.slider__slide.active');
+    let activeSlide = document.querySelector('.slider-slide.active');
     let nextSlide = null;
     let activeSlideX = activeSlide.offsetLeft;
     let nextSlideX = activeSlide.offsetWidth;

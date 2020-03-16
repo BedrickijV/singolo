@@ -104,8 +104,6 @@ h1::after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #f06c64;
-    border-bottom: 6px solid #ea676b;
     height: 600px;
 }
 
@@ -641,21 +639,32 @@ h1::after {
 }
 
 .second-slide {
-    flex-basis: 1020px;
+    left: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
 
 }
 .slides {
     display: flex;
+    position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 .first-slide {
-    display: flex;
+    left: 0%;
+    height: 600px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
 }
 
-.slider__slide {
+.slider-slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
     width: 100%;
-    position: relative;
-    left: 0;
+    height: 100%;
 
 }
 
