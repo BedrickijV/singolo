@@ -14,31 +14,43 @@
         <nav class="navigation">
             <ul class="nav-list" id="nav-list">
                 <li ><a class="nav-active" href=#>HOME</a></li>
-                <li><a href=#>SERVICES</a></li>
-                <li><a href=#>PORTFOLIO</a></li>
-                <li><a href=#>ABOUT</a></li>
-                <li><a href=#>CONTACT</a></li>
+                <li><a href=#services>SERVICES</a></li>
+                <li><a href=#portfolio>PORTFOLIO</a></li>
+                <li><a href=#about>ABOUT</a></li>
+                <li><a href=#contact>CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <div class="slider">
+        <div class="slider-controls-left" id="left-control">
+            <img src="assets/images/chev.png" alt="chev">
+        </div>
+        <div class="slider-controls-right" id="right-control">
+            <img src="assets/images/chev.png" alt="chev">
+        </div>
 
-        <div class="iPhone-vertical">
-            <img src="assets/images/iPhone-Vertical.png" alt="iPhone-vertical">
+        <div class="slides" id="slides">
+            <div class="first-slide slider__slide active">
+            <div class="iPhone-vertical" id="vertical-phone">
+                <img src="assets/images/iPhone-Vertical.png" alt="iPhone-vertical">
+                <div class="iphone-vert-screen" id="vertical-offscreen"></div>
+            </div>
+            <div class="iPhone-horizontal" id="horizontal-phone">
+                <img src="assets/images/iPhone-Horizontal.png" alt="iPhone-horizontal">
+                <div class="iphone-horiz-screen" id="horizontal-offscreen"></div>
+            </div>
+            </div>
+            <div class="second-slide slider__slide">
+            <img src="assets/images/Slide-2.png" alt="slide 2">
         </div>
-        <div class="iPhone-horizontal">
-            <img src="assets/images/iPhone-Horizontal.png" alt="iPhone-horizontal">
         </div>
-        <div class="slider-controls-left">
-            <img src="assets/images/chev.png" alt="chev">
-        </div>
-        <div class="slider-controls-right">
-            <img src="assets/images/chev.png" alt="chev">
-        </div>
+
+
+
 
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="services-general-description">
             <h2 class="services-title">Our Services</h2>
             <p class="services-title-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -114,7 +126,7 @@
             <div class="portfolio-image-item image-12"></div>
         </div>
     </div>
-    <div class="about-us-container">
+    <div class="about-us-container" id="about">
         <h2 class="about-us-title">About Us</h2>
         <p class="about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="about-us-items-container">
@@ -190,16 +202,16 @@
 
         </div>
     </div>
-    <div class="get-a-quote-container">
+    <div class="get-a-quote-container" id="contact">
         <h2 class="get-a-quote-title">Get a Quote</h2>
         <p class="get-a-quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="form-container">
             <form class="form">
-                <input type="text" class="input" required placeholder="Name (Required)">
+                <input type="text" class="input"  required placeholder="Name (Required)">
                 <input type="email" class="input" required placeholder="Email (Required)">
-                <input type="text" class="input" placeholder="Subject">
-                <textarea class="text-area" placeholder="Describe your project in detail..."></textarea>
-                <button class="button-submit" type="submit">
+                <input type="text" class="input" id="form-subject" placeholder="Subject">
+                <textarea class="text-area" id="form-describe" placeholder="Describe your project in detail..."></textarea>
+                <button class="button-submit" type="submit" id="submit-button">
                     Submit
                 </button>
             </form>
@@ -247,6 +259,17 @@
 
     </footer>
 
+
+</div>
+<div class="send-block" id="send-block">
+    <div class="send-info-block">
+        <p>Письмо отправлено</p>
+        <p id="theme"></p>
+        <p id="description"></p>
+        <button id="close-button">ОК</button>
+
+
+    </div>
 </div>
 <script src="script.js"></script>
 </body>

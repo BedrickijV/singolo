@@ -23,6 +23,7 @@
 }
 body {
     width: 100%;
+    position: relative;
 }
 
 .content-container {
@@ -109,16 +110,19 @@ h1::after {
 }
 
 .iPhone-vertical {
-    margin: 53px 0 54px 111px;
+    margin: 53px 74px 54px 111px;
+    position: relative;
 }
 .iPhone-horizontal {
     margin: 174px 111px 0 0;
+    position: relative;
 }
 .slider-controls-left {
     position: absolute;
     cursor: pointer;
     top: 281px;
     left: 42px;
+    z-index: 100;
 }
 .slider-controls-right {
     position: absolute;
@@ -126,6 +130,7 @@ h1::after {
     top: 277px;
     left: 964px;
     transform: rotate(180deg);
+    z-index: 100;
 }
 
 .services {
@@ -589,4 +594,71 @@ h1::after {
 
 .image-active {
     border: 5px solid #F06C64;
+}
+
+.send-block {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.send-info-block {
+    background: white;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.iphone-vert-screen {
+    display: none;
+    background-color: black;
+    width: 189px;
+    height: 333px;
+    position: absolute;
+    top: 65px;
+    left: 15px;
+}
+
+.iphone-horiz-screen {
+    display: none;
+    background-color: black;
+    width: 333px;
+    height: 189px;
+    position: absolute;
+    top: 14px;
+    left: 60px;
+}
+.off {
+    display: block;
+}
+
+.second-slide {
+    flex-basis: 1020px;
+
+}
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+.first-slide {
+    display: flex;
+}
+
+.slider__slide {
+    width: 100%;
+    position: relative;
+    left: 0;
+
+}
+
+.active{
+
 }
