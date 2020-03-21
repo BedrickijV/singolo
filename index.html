@@ -6,14 +6,14 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="content-container">
+<div class="content-container" id="content-container">
     <header class="header">
         <div class="logo">
             <h1>SINGOLO</h1>
         </div>
         <nav class="navigation">
             <ul class="nav-list" id="nav-list">
-                <li ><a class="nav-active" href=#>HOME</a></li>
+                <li ><a class="nav-active" href=#home>HOME</a></li>
                 <li><a href=#services>SERVICES</a></li>
                 <li><a href=#portfolio>PORTFOLIO</a></li>
                 <li><a href=#about>ABOUT</a></li>
@@ -21,7 +21,8 @@
             </ul>
         </nav>
     </header>
-    <div class="slider">
+    <div class="header-background"></div>
+    <div class="slider" id="home">
         <div class="slider-controls-left" id="left-control">
             <img src="assets/images/chev.png" alt="chev">
         </div>
@@ -100,7 +101,7 @@
 
 
     </div>
-    <div class="portfolio-container">
+    <div class="portfolio-container" id="portfolio">
         <h2 class="portfolio-title">Portfolio</h2>
         <p class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <div class="portfolio-buttons-container" id="portfolio-buttons">
@@ -109,7 +110,7 @@
             <button class="portfolio-button">Graphic Design</button>
             <button class="portfolio-button">Artwork</button>
         </div>
-        <div class="portfolio-images-container" id="portfolio">
+        <div class="portfolio-images-container" id="portfolio-images">
             <div class="portfolio-image-item image-1"></div>
             <div class="portfolio-image-item image-2"></div>
             <div class="portfolio-image-item image-3"></div>
@@ -204,7 +205,7 @@
         <h2 class="get-a-quote-title">Get a Quote</h2>
         <p class="get-a-quote-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="form-container">
-            <form class="form">
+            <form class="form" id="form">
                 <input type="text" class="input"  required placeholder="Name (Required)">
                 <input type="email" class="input" required placeholder="Email (Required)">
                 <input type="text" class="input" id="form-subject" placeholder="Subject">
