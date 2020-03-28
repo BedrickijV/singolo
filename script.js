@@ -10,7 +10,7 @@ const horizontalPhone = document.getElementById('horizontal-phone');
 
 nav.addEventListener("click", changeActive,);
 portfolioImages.addEventListener('click', changeActiveImage,);
-portfolioNavigation.addEventListener('click', sortImages );
+portfolioNavigation.addEventListener('click', sortImages);
 form.addEventListener('submit', sendInfo,);
 closeButton.addEventListener('click', closeSendBlock,);
 horizontalPhone.addEventListener('click', horizontalOffScreen,);
@@ -18,7 +18,7 @@ verticalPhone.addEventListener('click', verticalOffScreen,);
 document.addEventListener("scroll", onScroll);
 
 function changeActive(event) {
-    if (event.target.tagName ==='A') {
+    if (event.target.tagName === 'A') {
         nav.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
         event.target.classList.add('nav-active');
     }
@@ -32,16 +32,16 @@ function changeActiveImage(event) {
 }
 
 function sortImages(event) {
-    if (event.target.tagName ==='BUTTON') {
+    if (event.target.tagName === 'BUTTON') {
         const images = [];
         portfolioNavigation.querySelectorAll('button').forEach(el => el.classList.remove('button-active'));
         event.target.classList.add('button-active');
         portfolioImages.querySelectorAll('div').forEach(el => images.push(el));
-        images.sort(function(){
+        images.sort(function () {
             return Math.random() - 0.5;
         });
         portfolioImages.innerHTML = '';
-        images.forEach( el => portfolioImages.appendChild(el))
+        images.forEach(el => portfolioImages.appendChild(el))
     }
 
 }
@@ -56,7 +56,7 @@ function sendInfo(event) {
         subject = 'Без темы';
         document.getElementById('theme').innerText = subject;
         document.getElementById('description').innerText = `Описание: ${describe}`;
-    } else if (describe === '' && subject !== ''){
+    } else if (describe === '' && subject !== '') {
         describe = 'Без описания';
         document.getElementById('description').innerText = describe;
         document.getElementById('theme').innerText = `Тема: ${subject}`;
@@ -65,7 +65,7 @@ function sendInfo(event) {
         describe = 'Без описания';
         document.getElementById('theme').innerText = subject;
         document.getElementById('description').innerText = describe;
-        }  else {
+    } else {
         document.getElementById('theme').innerText = `Тема: ${subject}`;
         document.getElementById('description').innerText = `Описание: ${describe}`;
     }
@@ -94,23 +94,23 @@ function verticalOffScreen(event) {
 
 }
 
-const next =document.getElementById('right-control');
-const prev =document.getElementById('left-control');
+const next = document.getElementById('right-control');
+const prev = document.getElementById('left-control');
 
 let isEnabled = true;
 next.addEventListener('click', () => changeSlide('right'),);
 prev.addEventListener('click', () => changeSlide('left'),);
 
 
-function changeSlide (direction) {
-    if(!isEnabled) return;
+function changeSlide(direction) {
+    if (!isEnabled) return;
     isEnabled = false;
 
     let activeSlide = document.querySelector('.slider-slide.active');
     let nextSlide = null;
     let activeSlideX = activeSlide.offsetLeft;
     let nextSlideX = activeSlide.offsetWidth;
-    let slideSpeed = 34;
+    let slideSpeed = activeSlide.offsetWidth / 30;
 
     if (direction === 'right') {
         nextSlide = activeSlide.nextElementSibling || activeSlide.parentElement.firstElementChild;
@@ -118,14 +118,14 @@ function changeSlide (direction) {
         activeSlideX = activeSlide.offsetLeft;
         nextSlideX = activeSlide.offsetWidth;
         slideSpeed *= -1;
-    } else if (direction === 'left'){
+    } else if (direction === 'left') {
         nextSlide = activeSlide.previousElementSibling || activeSlide.parentElement.lastElementChild;
         nextSlide.style.right = `-${activeSlide.clientWidth}px`;
         activeSlideX = activeSlide.offsetLeft;
         nextSlideX = -activeSlide.offsetWidth;
     }
 
-    let moveSlides = setInterval( () => {
+    let moveSlides = setInterval(() => {
         activeSlideX += slideSpeed;
         nextSlideX += slideSpeed;
         activeSlide.style.left = `${activeSlideX}px`;
@@ -135,7 +135,7 @@ function changeSlide (direction) {
             clearInterval(moveSlides);
             isEnabled = true;
         }
-    }, 1000/60);
+    }, 1000 / 60);
 
     nextSlide.classList.add('active');
     activeSlide.classList.remove('active');
@@ -144,10 +144,10 @@ function changeSlide (direction) {
 function onScroll() {
     let curPos = window.scrollY + 95;
     const divs = document.querySelectorAll('#content-container > div');
-    const links = document. querySelectorAll('#nav-list a');
+    const links = document.querySelectorAll('#nav-list a');
 
     divs.forEach((el) => {
-        if (el.offsetTop <= curPos && (el.offsetTop +el.offsetHeight) > curPos) {
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
             links.forEach((a) => {
                 a.classList.remove('nav-active');
                 if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {

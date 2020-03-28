@@ -28,7 +28,7 @@ body, html {
 }
 
 .content-container {
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
 }
 h1 {
@@ -115,25 +115,39 @@ h1::after {
     height: 600px;
 }
 
+.slider div > img {
+    width: 100%;
+}
+
+.phones-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11%;
+    width: 100%;
+
+}
+
 .iPhone-vertical {
-    margin: 53px 74px 54px 111px;
+
     position: relative;
 }
 .iPhone-horizontal {
+    margin-left: 9%;
     position: relative;
 }
 .slider-controls-left {
     position: absolute;
     cursor: pointer;
-    top: 281px;
-    left: 42px;
+    top: calc(50% - 20px);
+    left: 4%;
     z-index: 100;
 }
 .slider-controls-right {
     position: absolute;
     cursor: pointer;
-    top: 277px;
-    left: 964px;
+    top: calc(50% - 23px);
+    left: 94.5%;
     transform: rotate(180deg);
     z-index: 100;
 }
@@ -144,7 +158,7 @@ h1::after {
     scroll-margin-top: 94px;
 }
 .services-general-description {
-    padding: 59px 40px 0 40px;
+    padding: 5.9% 4% 0 4%;
 
 }
 .services-title {
@@ -170,14 +184,14 @@ h1::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 47px 40px 30px 40px;
+    padding: 4.7% 4% 2.9% 4%;
     justify-content: space-between;
 }
 .service-item {
     display: flex;
     flex-direction: row;
-    flex-basis: 30%;
-    margin-right: 17px;
+    flex-basis: 32%;
+    margin-bottom: 3%;
 
 }
 .item-title {
@@ -190,11 +204,10 @@ h1::after {
 }
 
 .item-info {
-    width: 220px;
-    padding-left: 20px;
-    margin-top: -2px;
+    width: 100%;
+    padding-left: 7%;
     letter-spacing: 0.1px;
-    margin-bottom: 32px;
+
 }
 
 .item-description {
@@ -204,14 +217,13 @@ h1::after {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    padding-top: 9px;
-    margin-right: -23px;
+    padding-top: 4%;
 
 }
 
 .item-image {
-    width: 59px;
-    height: 59px;
+    width: 21%;
+    height: 59%;
 }
 
 .portfolio-container {
@@ -362,25 +374,17 @@ h1::after {
 .about-us-items-container {
     display: flex;
     justify-content: space-between;
-    width: 940px;
+    width: 100%;
     padding-top: 45px;
 }
 .about-us-item {
+    flex-basis: 33%;
 
 }
-.first-item-photo {
-    padding: 150px;
-    background-image: url("assets/images/AboutUs/Adam.png");
-}
+.about-us-photo img {
+    width: 100%;
+    max-width: 300px;
 
-.second-item-photo {
-    padding: 150px;
-    background-image: url("assets/images/AboutUs/Desmond.png");
-}
-
-.third-item-photo {
-    padding: 150px;
-    background-image: url("assets/images/AboutUs/Scolara.png");
 }
 .about-us-item-title {
     font-size: 18px;
@@ -388,11 +392,11 @@ h1::after {
     color: #666d89;
     font-family: "Lato-Heavy";
     font-weight: 900;
-    padding-top: 17px;
+    padding-top: 4%;
 }
 
 .about-us-item-description {
-    width: 300px;
+    width: 100%;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -410,6 +414,7 @@ h1::after {
 
 .social-media-item {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 /*.social-media-item:hover {*/
@@ -587,6 +592,11 @@ h1::after {
 }
 .footer-social-media-links {
     display: flex;
+
+}
+
+.footer-social-media-item {
+    cursor: pointer;
 }
 
 .footer-social-media-item:not(:last-child) {
@@ -629,21 +639,21 @@ h1::after {
 .iphone-vert-screen {
     display: none;
     background-color: black;
-    width: 189px;
-    height: 333px;
+    width: 79%;
+    height: 69%;
     position: absolute;
-    top: 65px;
-    left: 15px;
+    top: 13%;
+    left: 6%;
 }
 
 .iphone-horiz-screen {
     display: none;
     background-color: black;
-    width: 333px;
-    height: 189px;
+    width: 70%;
+    height: 78%;
     position: absolute;
-    top: 14px;
-    left: 60px;
+    top: 5%;
+    left: 12%;
 }
 .off {
     display: block;
@@ -681,4 +691,90 @@ h1::after {
 
 .active{
 
+}
+
+@media (max-width: 1019px) {
+    .header {
+        width: 100vw;
+    }
+    .slider {
+        height: calc(100vw * 0.575);
+    }
+    .service-item {
+        flex-basis: 49%;
+        margin-bottom: 7%;
+    }
+    .services-general-description {
+        padding: 5% 5% 0 5% ;
+    }
+    .service-items {
+        padding: 5% 5% 3% 5%;
+    }
+
+    .portfolio-description {
+        letter-spacing: 0;
+    }
+    .portfolio-buttons-container {
+        margin: 1.5% 0 4% 0;
+    }
+    .portfolio-images-container {
+        max-height: 100%;
+    }
+    .portfolio-image-item {
+        padding: 12.5% ;
+        flex-basis: 31%;
+    }
+    .image-1,
+    .image-2,
+    .image-3,
+    .image-5,
+    .image-6,
+    .image-7,
+    .image-8,
+    .image-9,
+    .image-10,
+    .image-11,
+    .image-12,
+    .image-13  {
+        background-position: 0;
+        background-size: 100% ;
+    }
+
+    .about-us-items-container {
+        padding-top: 6%;
+    }
+    .about-us-container {
+        padding: 8% 5%;
+    }
+
+    .about-us-item {
+        padding: 0 1%;
+    }
+    .social-media-links {
+        padding: 3% 0 0 0 ;
+    }
+    .form {
+        padding: 4% 0 6% 0 ;
+    }
+    .contact-information {
+        padding: 4% 0 0 3%;
+    }
+    .contact-information-description {
+        padding-top: 0;
+    }
+    .contact-information-links {
+        padding: 8% 0 0 0;
+    }
+    .input {
+        margin-bottom: 2.5%;
+    }
+    .text-area {
+        min-height: 158px;
+    }
+    .item-description {
+        padding-right: 18%;
+    }
+    .item-image {
+        width: 18%;
+    }
 }
