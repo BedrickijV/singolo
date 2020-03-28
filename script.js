@@ -157,3 +157,18 @@ function onScroll() {
         }
     })
 }
+
+document.querySelector('.mobile-header-button').addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('hamburger-active');
+    document.getElementById('navigation-block').classList.toggle('header-active');
+    document.body.classList.toggle('blocked');
+});
+
+document.addEventListener('click', (e) => {
+    let isBurgerActive = document.querySelector('.mobile-header-button').classList.contains('hamburger-active');
+    if(isBurgerActive && e.target.tagName === 'A' || e.target.tagName === 'NAV') {
+        document.querySelector('.mobile-header-button').classList.toggle('hamburger-active');
+        document.getElementById('navigation-block').classList.toggle('header-active');
+        document.body.classList.remove('blocked');
+    }
+}, true);
